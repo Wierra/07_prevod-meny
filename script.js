@@ -17,13 +17,13 @@ const convertToCzk = (amount, currency) => {
 
 
 document.body.innerHTML += `<h2>Převod z eura do CZK</h2>`;
-document.body.innerHTML += `${convertToCzk(268, "EUR")} CZK`;
+document.body.innerHTML += `${convertToCzk(268, "EUR").toLocaleString('CZK')} CZK`;
 
 document.body.innerHTML += `<h2>Převod z Britské libry do CZK</h2>`;
-document.body.innerHTML += `${convertToCzk(268, "GBP")} CZK`;
+document.body.innerHTML += `${convertToCzk(268, "GBP").toLocaleString('CZK')} CZK`;
 
 document.body.innerHTML += `<h2>Převod z Amerického dolaru do CZK</h2>`;
-document.body.innerHTML += `${convertToCzk(268, "USD")} CZK`;
+document.body.innerHTML += `${convertToCzk(268, "USD").toLocaleString('CZK')} CZK`;
 
 document.body.innerHTML += "<h2>Převod z Bitcoinu do CZK</h2>";
-document.body.innerHTML += `${convertToCzk(268, "BTC")} CZK`;
+document.body.innerHTML += `${convertToCzk(268, "BTC").toLocaleString('CZK')} CZK`;
